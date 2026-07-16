@@ -1,90 +1,120 @@
 # 🗡️ Beat Saber Custom Map Project: Ren - "Kujo Beatdown"
 
-Welcome to the collaborative mapping repository for Ren's aggressive, theatrical masterpiece: **"Kujo Beatdown"**. 
+Welcome to the collaborative mapping repository for Ren's aggressive, theatrical masterpiece: **"Kujo Beatdown"**.
 
 This project aims to bring the intense tension, operatic shifts, and heavy bass drops of the track into a highly-polished, beautifully lit, and incredibly satisfying Beat Saber custom level.
 
 ---
 
-## 🎵 Track Specifications
-* **Song:** Kujo Beatdown
-* **Artist:** Ren
-* **BPM:** ~90 (Mapped to 16th-note subdivisions for high-intensity sections)
-* **Target Difficulties:** Hard, Expert, Expert+
-* **Environment:** Linkin Park or OST Vol. VI (Dark reds, sharp grays, heavy strobes)
+## 🚀 Quick Start (2 Minutes)
+
+1. Open **Issues** and pick an item using the templates.
+2. If unclaimed, comment that you're taking it.
+3. Fork this repo and create a branch:
+   - `feat/hard-mapping`
+   - `feat/expertplus-pattern-pass`
+   - `chore/lights-v1`
+4. Make your changes in the correct folder (see layout below).
+5. Open a Pull Request using the PR template.
+
+Project tracking template:
+- [`docs/parent-tracking-issue.md`](docs/parent-tracking-issue.md)
 
 ---
 
-## 🗺️ Map Design & Concept Spec
+## 🎵 Track Specifications
 
-The layout of this map is built on **contrast**—transitioning from slow, atmospheric "conductor" movements to dense, high-velocity rap streams.
+- **Song:** Kujo Beatdown
+- **Artist:** Ren
+- **BPM:** ~90 (mapped with 16th-note subdivisions in high-intensity sections)
+- **Target Difficulties:** Hard, Expert, Expert+
+- **Environment:** Linkin Park or OST Vol. VI (dark reds, sharp grays, heavy strobes)
 
-### 🎚️ Difficulty & Mapping Goals
+---
+
+## 🗺️ Repository Layout
+
+Use and keep these directories consistent:
+
+- `docs/` → planning docs, tracking docs, guides
+- `references/` → non-distributable references / timing notes
+- `Hard/` → Hard difficulty map files
+- `Expert/` → Expert difficulty map files
+- `ExpertPlus/` → Expert+ difficulty map files
+- `Lightshow/` → lighting/chroma-specific files
+- `exports/` → packaged test/release outputs (if used)
+
+> If a directory is missing, create it in your PR with a brief README or `.gitkeep` as needed.
+
+---
+
+## 🎚️ Difficulty & Mapping Goals
 
 | Difficulty | Target NPS | Style & Focus | Status |
 | :--- | :--- | :--- | :--- |
-| **Hard** | ~3.2 | Casual: Focus on heavy bass kicks & main lyric flows. No complex crossovers. | 🟡 *Claimed (Need WIP)* |
-| **Expert** | ~5.0 | Regular: Matches vocal flows, introduces light streams & basic wrist-flicks. | 🟢 **Open** |
-| **Expert+** | ~7.5+ | Enthusiast: Full syllable-matching rap streams, intense crossovers, and dodging. | 🔴 *In Progress* |
-| **Chroma Lightshow** | -- | Full custom lightshow utilizing modern V3 lighting structures. | 🟢 **Open** |
+| **Hard** | ~3.2 | Casual: focus on heavy bass kicks & primary lyric flow. Avoid complex crossovers. | 🟡 Claimed (WIP needed) |
+| **Expert** | ~5.0 | Regular: match vocal flow, add light streams and basic wrist-flick patterns. | 🟢 Open |
+| **Expert+** | ~7.5+ | Enthusiast: syllable-matching rap streams, intense crossovers, dodging. | 🔴 In Progress |
+| **Chroma Lightshow** | -- | Full custom lightshow using modern V3 lighting structures. | 🟢 Open |
 
 ---
 
-## 🎛️ Extended Discography (Future Project Ideas)
-If you are looking to map other Ren tracks, these are highly compatible with Beat Saber's rhythm mechanics:
+## 🛠️ Tooling & Setup
 
-*   **"Down On The Beat" (feat. Viktus):** Deep electronic bassline with a pounding, persistent rhythm. Best suited for high-speed, technical flow-maps.
-*   **"Animal Flow":** Bouncy, drum-and-bass-adjacent speed. Perfect for intense, cardio-focused streaming maps with rapid ducking/dodging.
-*   **"Money Game, Pt. 2":** A marching, theatrical build-up. Perfect for deliberate, sweeping, and dramatic cuts that match his storytelling climax.
-*   **"Illest Of Our Time":** Pure hip-hop flow. Best for complex, fast-paced stream patterns that track every syllable of the rap verses.
+Recommended editors:
+- **ChroMapper**
+- **MediocreMapAssistant2**
 
----
-
-## ⚖️ Licensing, Copyright & Community Guidelines
-
-When mapping and sharing custom songs in Beat Saber, it is crucial to understand the legal landscape to protect both yourself and the artist.
-
-### 1. The Beat Saber Modding Context (The Grey Area)
-*   **Strictly Non-Commercial:** Custom Beat Saber maps shared on community platforms like BeatSaver are unofficial mods. **You must never charge money for downloading, playing, or accessing this map**. 
-*   **How Files are Handled:** Custom maps bundle the song's audio (`.egg` or `.ogg` format) alongside the chart data. While mapping is a transformative creative act, distributing the audio file technically falls into a copyright "grey area". 
-
-### 2. Ren’s Stance on Copyright & Content Creation
-*   Ren is famously an **independent artist** who bypassed traditional gatekeepers by keeping his copyright policies incredibly creator-friendly. He historically allows creators, reactors, and fans to use his music without issuing heavy copyright strikes.
-*   **Important Caveat ("Kujo Beatdown"):** Because this track is a highly publicized diss track born out of a real-world sample clearing and licensing dispute with another producer, **do not attempt to commercialize, monetize, or use this map for paid promotion.** Keep this project entirely as a free, fan-made tribute to his art.
-
-### 3. Fair Use & Safe Distribution
-*   Do not upload full, unedited `.mp3` files to general file-sharing sites. Only upload the compiled `.zip` map file directly to recognized platforms like **BeatSaver** or **BeastSaber**.
-*   If you stream your custom map gameplay on YouTube or Twitch, be aware that you may receive a "Copyright Claim" (which simply redirects ad-revenue to the artist's team—which we want anyway!) but you are highly unlikely to receive a hostile "Copyright Strike".
+Guidance:
+- **NJS suggestion (Expert/Expert+):** `16` to `18`
+- Keep timing and offset notes in issue comments or docs so others can reproduce your setup.
 
 ---
 
-## 🛠️ How to Contribute
+## 🤝 Contribution Workflow
 
-We are actively looking for mappers, lighting designers, and playtesters to help bring this project to life!
+For full guidance, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-### 1. Claim a Role
-Check the table above or the [Issues] tab to see what is currently open. 
-* To claim a difficulty or the lighting setup, open an issue titled `[CLAIM] Expert+ Difficulty` or `[CLAIM] Lighting`.
-
-### 2. Set Up Your Environment
-We recommend using **ChroMapper** or **MediocreMapAssistant2** for editing.
-* **NJS (Note Jump Speed) Suggestion:** Set NJS between `16` and `18` for Expert/Expert+ to prevent the 16th-note streams from bunching up at 90 BPM.
-* **Audio Setup:** Ensure your audio file is high-quality and properly offset. Contact the project maintainer in the issues if you need the synchronized `.egg` file.
-
-### 3. Submit Your Work
-1. Fork this repository.
-2. Create a branch for your feature (`git checkout -b feature/expert-plus-mapping`).
-3. Place your mapped files in the corresponding directory (`/ExpertPlus/` or `/Lightshow/`).
-4. Commit your changes and open a **Pull Request**.
+Short version:
+1. Claim work in Issues (use templates under `.github/ISSUE_TEMPLATE`).
+2. Fork and branch from `main`.
+3. Keep changes scoped to one issue.
+4. Open PR with:
+   - linked issue
+   - summary of changes
+   - testing/playtest notes
+   - known follow-ups
 
 ---
 
-## 👥 Project Board & Contributors
-* **Project Lead / Lead Concept:** [@ibloud](https://github.com/ibloud)
-* **E+ Mapper:** *is it you?*
-* **Playtesters Needed:** Sign up in the discussions tab to receive alpha/beta build zips for feedback!
+## ✅ PR Requirements (before merge)
+
+- [ ] Linked to a relevant issue
+- [ ] Files placed in the correct repository directory
+- [ ] No broken/unplayable sections introduced
+- [ ] Timing checked in-editor and in-game (where applicable)
+- [ ] Notes added for any known limitations or next steps
 
 ---
 
-> *"I'm a blood-sucking titan from the streets of Brighton..."*  
-> Let's build a map worthy of the track. Grab your sabers!
+## ⚖️ Licensing & Copyright (Summary)
+
+This is a non-commercial fan mapping project.
+
+- Do **not** monetize map distribution.
+- Prefer sharing compiled map packages through recognized community channels.
+- Expect standard platform copyright-claim behavior for gameplay videos.
+
+If needed, keep deeper policy/legal notes in `docs/` instead of expanding this README further.
+
+---
+
+## 👥 Project Lead & Contributors
+
+- **Project Lead / Concept:** [@ibloud](https://github.com/ibloud)
+- **Mappers / Lighters / Playtesters:** Join via Issues and PRs
+
+---
+
+> *"I'm a blood-sucking titan from the streets of Brighton..."*
+> Let’s build a map worthy of the track. Grab your sabers!

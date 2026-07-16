@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kujo Beatdown - Beat Saber Mapping Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0d0d0d;
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(239, 68, 68, 0.5), 0 0 20px rgba(239, 68, 68, 0.3);
+        }
+    </style>
+</head>
+<body class="text-gray-100 font-sans selection:bg-red-600 selection:text-white">
+
+    <!-- Hero Section -->
+    <header class="relative border-b border-red-900/40 bg-gradient-to-b from-black to-[#0d0d0d] py-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-red-500 font-bold uppercase tracking-widest text-xs">Community Mapping Project</span>
+            <h1 class="text-4xl md:text-6xl font-black mt-2 tracking-tight text-white text-glow">
+                KUJO BEATDOWN
+            </h1>
+            <p class="text-gray-400 mt-4 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+                Step-by-step instructions and references for mapping Ren's legendary, high-tension diss track into Beat Saber.
+            </p>
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a href="#mapping-steps" class="px-6 py-3 bg-red-600 hover:bg-red-700 transition text-white font-semibold rounded-md shadow-lg shadow-red-900/30">
+                    View Mapping Steps
+                </a>
+                
+                <!-- Live GitHub Repository Link -->
+                <a href="https://github.com/ibloud/kujo-beatdown-beatsaber-map" target="_blank" rel="noopener" class="px-6 py-3 bg-neutral-900 border border-neutral-800 hover:border-red-600/50 hover:bg-neutral-800 transition text-gray-300 font-semibold rounded-md flex items-center gap-2">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                    </svg>
+                    GitHub Repo
+                </a>
+
+                <a href="https://youtu.be/it_hPbqcYOA" target="_blank" rel="noopener" class="px-6 py-3 bg-neutral-900 border border-neutral-800 hover:border-red-600/50 hover:bg-neutral-800 transition text-gray-300 font-semibold rounded-md">
+                    Watch Official Video
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Videos & Reference Section -->
+        <section class="space-y-6">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-white border-l-4 border-red-600 pl-3">
+                Song & Highlight Videos
+            </h2>
+            <p class="text-gray-400">
+                Study the movement, pacing, and emotional cues from the music video to shape your mapping flow:
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Official Music Video Card -->
+                <div class="bg-neutral-950 border border-neutral-900 rounded-lg overflow-hidden hover:border-red-600/30 transition duration-300">
+                    <div class="aspect-video bg-neutral-900 relative flex items-center justify-center">
+                        <span class="text-neutral-700 font-mono text-sm">[Video Player Preview]</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-white mb-1">Official Music Video</h3>
+                        <p class="text-sm text-gray-400 mb-4">The raw performance featuring theatrical shifts, aggressive delivery, and intense pacing.</p>
+                        <a href="https://youtu.be/it_hPbqcYOA" target="_blank" rel="noopener" class="inline-flex items-center text-red-500 font-semibold text-sm hover:text-red-400 transition">
+                            Watch Original Video on YouTube →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Behind the Scenes Card -->
+                <div class="bg-neutral-950 border border-neutral-900 rounded-lg overflow-hidden hover:border-red-600/30 transition duration-300">
+                    <div class="aspect-video bg-neutral-900 relative flex items-center justify-center">
+                        <span class="text-neutral-700 font-mono text-sm">[Video Player Preview]</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-white mb-1">Behind The Scenes Highlight</h3>
+                        <p class="text-sm text-gray-400 mb-4">Go behind the scenes with Ren to see how the song, composition, and physical acting were created.</p>
+                        <a href="https://youtu.be/HiPY_BcyaoM" target="_blank" rel="noopener" class="inline-flex items-center text-red-500 font-semibold text-sm hover:text-red-400 transition">
+                            Watch Behind The Scenes on YouTube →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-neutral-900">
+
+        <!-- Extended Discography & Recommended Tracks -->
+        <section class="space-y-6">
+            <div class="space-y-2">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white border-l-4 border-red-600 pl-3">
+                    Other Recommended Tracks for Mapping
+                </h2>
+                <p class="text-gray-400">If you want to map more of Ren's discography, these highly rhythmic tracks are perfect candidates for custom levels:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Down On The Beat -->
+                <div class="bg-neutral-950/60 border border-neutral-900/80 p-6 rounded-lg hover:border-red-600/20 transition">
+                    <h3 class="text-lg font-bold text-red-400">"Down On The Beat" (feat. Viktus)</h3>
+                    <p class="text-sm text-gray-400 mt-2 mb-4 leading-relaxed">
+                        Features a driving, persistent electronic bassline with a pounding, clean rhythm. Built beautifully for high-speed, technical flow mapping.
+                    </p>
+                    <a href="https://youtu.be/HkKrZ8EAn5g" target="_blank" rel="noopener" class="text-xs font-semibold uppercase tracking-wider text-gray-300 hover:text-red-500 transition">
+                        Listen on YouTube →
+                    </a>
+                </div>
+
+                <!-- Animal Flow -->
+                <div class="bg-neutral-950/60 border border-neutral-900/80 p-6 rounded-lg hover:border-red-600/20 transition">
+                    <h3 class="text-lg font-bold text-red-400">"Animal Flow"</h3>
+                    <p class="text-sm text-gray-400 mt-2 mb-4 leading-relaxed">
+                        A bouncy, fast drum-and-bass-adjacent rhythm. Exceptional for intense, cardio-focused streaming maps filled with aggressive dodging and crouching.
+                    </p>
+                    <a href="https://youtu.be/2g6W1R2_i8U" target="_blank" rel="noopener" class="text-xs font-semibold uppercase tracking-wider text-gray-300 hover:text-red-500 transition">
+                        Listen on YouTube →
+                    </a>
+                </div>
+
+                <!-- Money Game Pt. 2 -->
+                <div class="bg-neutral-950/60 border border-neutral-900/80 p-6 rounded-lg hover:border-red-600/20 transition">
+                    <h3 class="text-lg font-bold text-red-400">"Money Game, Pt. 2"</h3>
+                    <p class="text-sm text-gray-400 mt-2 mb-4 leading-relaxed">
+                        A steady, brass-laden theatrical march that builds to an explosive, rapid-fire lyrical climax. Perfect for broad, dramatic conduct-style cutting.
+                    </p>
+                    <a href="https://youtu.be/NyYYRL7uL0E" target="_blank" rel="noopener" class="text-xs font-semibold uppercase tracking-wider text-gray-300 hover:text-red-500 transition">
+                        Listen on YouTube →
+                    </a>
+                </div>
+
+                <!-- Illest Of Our Time -->
+                <div class="bg-neutral-950/60 border border-neutral-900/80 p-6 rounded-lg hover:border-red-600/20 transition">
+                    <h3 class="text-lg font-bold text-red-400">"Illest Of Our Time"</h3>
+                    <p class="text-sm text-gray-400 mt-2 mb-4 leading-relaxed">
+                        Crisp hip-hop production with sharp snare hits. Excellent for intricate, rapid stream patterns mapped directly to every syllable of the flow.
+                    </p>
+                    <a href="https://youtu.be/aR2_y22S_C4" target="_blank" rel="noopener" class="text-xs font-semibold uppercase tracking-wider text-gray-300 hover:text-red-500 transition">
+                        Listen on YouTube →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-neutral-900">
+
+        <!-- Step-by-Step Instructions -->
+        <section id="mapping-steps" class="space-y-8">
+            <div class="space-y-2">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white border-l-4 border-red-600 pl-3">
+                    How to Create the Map
+                </h2>
+                <p class="text-gray-400">Follow this structured roadmap to translate the track's raw, theatrical storytelling into blocks and sabers.</p>
+            </div>
+
+            <div class="relative border-l-2 border-neutral-800 ml-4 pl-8 space-y-12">
+                <!-- Step 1 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold ring-8 ring-[#0d0d0d]">
+                        1
+                    </span>
+                    <h3 class="text-xl font-bold text-white">Download mapping tools</h3>
+                    <p class="text-gray-400 mt-2 leading-relaxed">
+                        To chart the song, download either <strong>ChroMapper</strong> or <strong>MediocreMapAssistant2</strong>. You will also need a high-quality audio file of the song formatted to <code>.egg</code> or <code>.ogg</code> format.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold ring-8 ring-[#0d0d0d]">
+                        2
+                    </span>
+                    <h3 class="text-xl font-bold text-white">Align the BPM & Note Jump Speed (NJS)</h3>
+                    <p class="text-gray-400 mt-2 leading-relaxed">
+                        Set the project tempo to <strong>90 BPM</strong>. To prevent fast 16th-note syllable-matching streams from grouping up too closely and confusing players, set your NJS (Note Jump Speed) to a minimum of <strong>16 to 18</strong>.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold ring-8 ring-[#0d0d0d]">
+                        3
+                    </span>
+                    <h3 class="text-xl font-bold text-white">Map the Eerie Acoustic Monologue (0:00 - 0:34)</h3>
+                    <p class="text-gray-400 mt-2 leading-relaxed">
+                        Focus on slow, fluid hand movements. Avoid sharp angles or rapid speed. The player should feel like they are painting in the air with broad strokes to match the tense, quiet dialogue.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold ring-8 ring-[#0d0d0d]">
+                        4
+                    </span>
+                    <h3 class="text-xl font-bold text-white">Chart the Syllable-Matching First Drop (0:52 - 1:30)</h3>
+                    <p class="text-gray-400 mt-2 leading-relaxed">
+                        When the aggressive beat drops ("I'm a blood-sucking titan..."), increase the note density significantly. Map fast, alternating 16th-note streams to Ren's rapid-fire vocal deliveries to maximize physical player engagement.
+                    </p>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold ring-8 ring-[#0d0d0d]">
+                        5
+                    </span>
+                    <h3 class="text-xl font-bold text-white">Submit to BeatSaver</h3>
+                    <p class="text-gray-400 mt-2 leading-relaxed">
+                        Package your finished map difficulty files together along with your custom V3 lightshow and publish to <strong>BeatSaver</strong> to let the entire VR community enjoy the experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-900 bg-black py-12 px-6 text-center text-sm text-gray-500">
+        <div class="max-w-xl mx-auto space-y-4">
+            <p>
+                This is a community, non-commercial fan mapping portal. All music rights belong to Ren / Freckled Angels.
+            </p>
+            <p class="text-xs text-gray-600">
+                For official inquiries, project coordination, or questions regarding community licensing, you can reach out to Ren's management team at: 
+                <br>
+                <a href="mailto:connor@renmakesmusic.com" class="text-red-500 hover:text-red-400 font-semibold underline mt-1 inline-block transition">
+                    connor@renmakesmusic.com
+                </a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

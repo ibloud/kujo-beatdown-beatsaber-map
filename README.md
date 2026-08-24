@@ -22,11 +22,12 @@ This repository currently includes project docs, issue templates, and PR guidanc
 If this is your first time contributing, follow this path:
 
 1. **Open the Issues tab** and choose one task.
-2. **Comment on the issue to claim it** before you start.
-3. **Set up a Beat Saber editor** such as ChroMapper or MediocreMapAssistant2.
-4. **Create or update files only in the folder for that task** (`Hard/`, `Expert/`, `ExpertPlus/`, `Lightshow/`, `docs/`, or `references/`).
-5. **Test your change** in the editor and in-game if possible.
-6. **Open a pull request** with the linked issue, what you changed, and how you tested it.
+2. **If there are no open issues yet, create a new issue** describing the work you want to do.
+3. **Comment on the issue to claim it** before you start.
+4. **Set up a Beat Saber editor** such as ChroMapper or MediocreMapAssistant2.
+5. **Create or update files only in the folder for that task** (`Hard/`, `Expert/`, `ExpertPlus/`, `Lightshow/`, `docs/`, or `references/`).
+6. **Test your change** in the editor and in-game if possible.
+7. **Open a pull request** with the linked issue, what you changed, and how you tested it.
 
 If you only remember one thing: **pick one issue, keep your changes scoped to that issue, and explain your testing in the PR.**
 
@@ -96,6 +97,7 @@ If your issue needs a new top-level folder, explain why in the PR.
 ### 1) Claim an issue
 
 - Pick one open issue.
+- If there are no open issues yet, create a new issue describing the task you want to work on.
 - Leave a comment so other contributors know it is taken.
 - Keep one PR focused on one issue whenever possible.
 
@@ -141,7 +143,7 @@ For full contributor guidance, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 Here is a simple end-to-end example for a new contributor:
 
-1. Claim `#12` for an Expert section cleanup.
+1. Open a new issue for an Expert section cleanup if none exists.
 2. Branch from `main`.
 3. Open the map in your editor and revise only the assigned Expert section.
 4. Save the updated map files in `Expert/`.

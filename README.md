@@ -1,172 +1,200 @@
 # 🗡️ Beat Saber Custom Map Project: Ren - "Kujo Beatdown"
 
-Welcome to the collaborative mapping repository for Ren's aggressive, theatrical masterpiece: **"Kujo Beatdown"**.
+Welcome to the collaborative Beat Saber mapping repository for Ren's **"Kujo Beatdown."**
 
-This project is organized so multiple mappers, lighters, and playtesters can work together on a shared Beat Saber custom level.
-
----
-
-## 🚀 Quick Start
-
-If you're new to the project, start here:
-
-1. Check the open **Issues** and pick one that matches your skill or interest.
-2. Comment on the issue to claim it before starting work.
-3. Fork this repo and create a branch from `main`.
-4. Work only in the relevant difficulty or lightshow folder.
-5. Add notes about timing, style, and testing in your PR.
-6. Open a Pull Request and link the issue you completed.
-
-Project tracking template:
-- [`docs/parent-tracking-issue.md`](docs/parent-tracking-issue.md)
+This repo is meant to help contributors plan, map, light, test, and review a custom level together. The goal is to make it easy for a first-time contributor to understand what to pick up, where to put their work, and what a ready-to-review contribution should include.
 
 ---
 
-## 🎵 Track Specifications
+## Brief project overview
 
 - **Song:** Kujo Beatdown
 - **Artist:** Ren
-- **BPM:** ~90
-- **Target Difficulties:** Hard, Expert, Expert+
-- **Environment:** Dark, high-contrast lighting with sharp reds/grays and heavy strobe moments
+- **Target contributions:** beatmap difficulties, lightshow work, playtesting, and project docs
+- **Primary workflow:** claim an issue, make the change in the right place, test it, and open a PR
+
+This repository currently includes project docs, issue templates, and PR guidance. Difficulty folders such as `Hard/`, `Expert/`, `ExpertPlus/`, and `Lightshow/` are the intended locations for map content as contributors add or update it.
 
 ---
 
-## 🛠️ Recommended Tools
+## 🚀 Start here if you're new
 
-Recommended editors:
-- **ChroMapper**
-- **MediocreMapAssistant2**
+If this is your first time contributing, follow this path:
 
-Helpful workflow tools:
-- A Beat Saber custom song editor
-- A stable way to preview lighting and gameplay in-game
-- A notes/timing reference for the song structure
+1. **Open the Issues tab** and choose one task.
+2. **Comment on the issue to claim it** before you start.
+3. **Set up a Beat Saber editor** such as ChroMapper or MediocreMapAssistant2.
+4. **Create or update files only in the folder for that task** (`Hard/`, `Expert/`, `ExpertPlus/`, `Lightshow/`, `docs/`, or `references/`).
+5. **Test your change** in the editor and in-game if possible.
+6. **Open a pull request** with the linked issue, what you changed, and how you tested it.
 
-Suggested mapping settings:
-- **NJS for Expert / Expert+:** `16` to `18`
-- Keep any timing or offset notes in issue comments or `docs/`
+If you only remember one thing: **pick one issue, keep your changes scoped to that issue, and explain your testing in the PR.**
 
 ---
 
-## 🗺️ Repository Layout
+## 🛠️ Required tools
 
-Use these directories consistently:
+You do not need every tool below for every issue, but new contributors will usually want:
 
-- `docs/` → planning docs, tracking docs, guides
-- `references/` → timing notes, references, non-distributable source material
-- `Hard/` → Hard difficulty map files
-- `Expert/` → Expert difficulty map files
-- `ExpertPlus/` → Expert+ difficulty map files
-- `Lightshow/` → lighting/chroma-specific files
-- `exports/` → packaged test or release outputs, if needed
+- **A Beat Saber mapping editor**
+  - **ChroMapper**
+  - **MediocreMapAssistant2**
+- **A way to preview or playtest the map**
+  - in-editor preview at minimum
+  - in-game playtest when possible
+- **Git + GitHub**
+  - branch from `main`
+  - open a pull request when your change is ready
 
-If a directory is missing, create it in your PR with a brief README or `.gitkeep` as needed.
+Helpful extras:
 
----
-
-## 🧩 How to Create the Map
-
-If you're contributing a map section or difficulty, use this general workflow:
-
-### 1) Choose the work item
-- Open an issue for the difficulty, section, or lightshow task you want to work on.
-- Claim the issue in a comment so others know it is being handled.
-
-### 2) Set up your editor project
-- Open the song in your mapping editor.
-- Verify the song timing, BPM, and offset.
-- Import or recreate any reference timing notes from `references/` or issue comments.
-
-### 3) Work in the correct folder
-- Put Hard mapping changes in `Hard/`
-- Put Expert mapping changes in `Expert/`
-- Put Expert+ mapping changes in `ExpertPlus/`
-- Put lighting-only changes in `Lightshow/`
-
-### 4) Map the section
-- Keep note placement readable and intentional.
-- Match note density to the target difficulty.
-- Use patterns that fit the music’s phrasing and intensity.
-- Avoid introducing unplayable swings, awkward hand strain, or accidental crossovers unless the section calls for them.
-
-### 5) Add lighting and polish
-- Use the lightshow folder for custom lighting work.
-- Keep lighting support consistent with the song’s mood.
-- Test that lighting does not obscure gameplay readability.
-
-### 6) Test before opening a PR
-- Check the section in-editor.
-- If possible, test in-game.
-- Fix timing issues, impossible patterns, or awkward flow before requesting review.
+- Notes about song timing, offsets, or section references
+- Screen recordings or timestamps for tricky mapping feedback
 
 ---
 
-## 🎚️ Difficulty & Mapping Goals
+## 🗺️ Repository layout
 
-| Difficulty | Target NPS | Style & Focus | Status |
-| :--- | :--- | :--- | :--- |
-| **Hard** | ~3.2 | Casual: focus on heavy bass kicks & primary lyric flow. Avoid complex crossovers. | 🟡 Claimed (WIP needed) |
-| **Expert** | ~5.0 | Regular: match vocal flow, add light streams and basic wrist-flick patterns. | 🟢 Open |
-| **Expert+** | ~7.5+ | Enthusiast: syllable-matching rap streams, intense crossovers, dodging. | 🔴 In Progress |
-| **Chroma Lightshow** | -- | Full custom lightshow using modern V3 lighting structures. | 🟢 Open |
+### What is already in this repository
 
----
+- `README.md` — contributor-facing project overview
+- `CONTRIBUTING.md` — branch, PR, and review guidance
+- `docs/` — project docs such as [`docs/parent-tracking-issue.md`](docs/parent-tracking-issue.md)
+- `.github/ISSUE_TEMPLATE/` — issue templates for planning, setup, drafts, playtests, and polish
 
-## 🤝 Contribution Workflow
+### Where contribution files should go
 
-For full guidance, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+Use or create these folders as needed for the issue you are working on:
 
-Short version:
-1. Claim work in Issues.
-2. Fork and branch from `main`.
-3. Keep changes scoped to one issue.
-4. Open a PR with:
-   - linked issue
-   - summary of changes
-   - testing/playtest notes
-   - known follow-ups
+- `Hard/` — Hard difficulty map files
+- `Expert/` — Expert difficulty map files
+- `ExpertPlus/` — Expert+ difficulty map files
+- `Lightshow/` — lighting or Chroma-specific files
+- `references/` — timing notes, references, or source notes that are safe to share
+- `docs/` — process docs, specs, and contributor-facing notes
 
----
+If your issue needs a new top-level folder, explain why in the PR.
 
-## ✅ PR Requirements (before merge)
+### Sample layout
 
-- [ ] Linked to a relevant issue
-- [ ] Files placed in the correct repository directory
-- [ ] No broken or unplayable sections introduced
-- [ ] Timing checked in-editor and in-game, where applicable
-- [ ] Notes added for any known limitations or next steps
-
----
-
-## 📦 Expected Output
-
-A completed contribution should usually include:
-- a playable map section or full difficulty
-- cleaned-up timing and note placement
-- optional lighting/chroma work if applicable
-- notes in the PR describing what was mapped and how it was tested
+```text
+.
+├── README.md
+├── CONTRIBUTING.md
+├── docs/
+├── references/
+├── Hard/
+├── Expert/
+├── ExpertPlus/
+└── Lightshow/
+```
 
 ---
 
-## ⚖️ Licensing & Copyright
+## 🧩 Step-by-step mapping workflow
+
+### 1) Claim an issue
+
+- Pick one open issue.
+- Leave a comment so other contributors know it is taken.
+- Keep one PR focused on one issue whenever possible.
+
+### 2) Set up your editor
+
+- Open the song in ChroMapper, MMA2, or your preferred compatible editor.
+- Confirm the BPM, timing, and offset before placing notes.
+- Check the issue, PR history, or `references/` for timing or style notes.
+
+### 3) Edit the correct folder
+
+- Difficulty work belongs in `Hard/`, `Expert/`, or `ExpertPlus/`.
+- Lighting-only work belongs in `Lightshow/`.
+- Notes, specs, or planning updates belong in `docs/` or `references/`.
+
+### 4) Map or revise your assigned section
+
+- Match the target difficulty.
+- Keep patterns readable and intentionally placed.
+- Fix obvious timing problems before opening a PR.
+- Avoid unrelated cleanup outside the issue you claimed.
+
+### 5) Test your work
+
+- Check the changed section in your editor.
+- Playtest in-game if possible.
+- Revisit any awkward flow, broken swings, or readability problems.
+
+### 6) Open a pull request
+
+Include:
+
+- the linked issue
+- a short summary of what changed
+- how you tested it
+- any follow-up notes or known limitations
+
+For full contributor guidance, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+---
+
+## 🧪 Sample workflow
+
+Here is a simple end-to-end example for a new contributor:
+
+1. Claim `#12` for an Expert section cleanup.
+2. Branch from `main`.
+3. Open the map in your editor and revise only the assigned Expert section.
+4. Save the updated map files in `Expert/`.
+5. Test the section in-editor and do an in-game check if available.
+6. Open a PR that says what section you changed, what issue it closes, and what testing you completed.
+
+That is enough for a valid first contribution.
+
+---
+
+## ✅ Expected output checklist
+
+A contribution is usually ready for review when it includes:
+
+- [ ] The work matches one claimed issue
+- [ ] Files are in the correct folder
+- [ ] The changed section is playable and not obviously broken
+- [ ] Timing was checked in-editor
+- [ ] In-game testing was done when possible
+- [ ] The PR explains what changed and how it was tested
+
+---
+
+## 🔎 Definition of done for a contribution
+
+Before requesting review, make sure:
+
+- [ ] Your changes stay within the issue scope
+- [ ] No clearly unplayable patterns were introduced
+- [ ] Timing was sanity-checked for touched sections
+- [ ] Paths and naming are consistent
+- [ ] Any known follow-up work is called out in the PR
+
+The project tracking template in [`docs/parent-tracking-issue.md`](docs/parent-tracking-issue.md) is a planning aid for issue organization. It is not a live “everything here is currently in progress” status board by itself.
+
+---
+
+## ⚖️ Licensing & copyright
 
 This is a non-commercial fan mapping project.
 
 - Do **not** monetize map distribution.
 - Prefer sharing compiled map packages through recognized community channels.
-- Expect standard platform copyright-claim behavior for gameplay videos.
-
-If needed, keep deeper policy/legal notes in `docs/` instead of expanding this README further.
+- Expect normal platform copyright-claim behavior for gameplay videos.
 
 ---
 
-## 👥 Project Lead & Contributors
+## 👥 Project lead & contributors
 
 - **Project Lead / Concept:** [@ibloud](https://github.com/ibloud)
-- **Mappers / Lighters / Playtesters:** Join via Issues and PRs
+- **Contributors:** mappers, lighters, playtesters, and reviewers are all welcome through issues and pull requests
 
 ---
 
 > *"I'm a blood-sucking titan from the streets of Brighton..."*
-> Let’s build a map worthy of the track. Grab your sabers!
+> Let’s build a map worthy of the track.

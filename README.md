@@ -181,6 +181,8 @@ The project tracking template in [`docs/parent-tracking-issue.md`](docs/parent-t
 
 ---
 
+> **Rights boundary:** The map/chart is a contributor-created representation. It does not itself license the underlying recording or composition. See [docs/RIGHTS-AND-PROVENANCE.md](docs/RIGHTS-AND-PROVENANCE.md).
+
 ## ⚖️ Licensing & copyright
 
 This is a non-commercial fan mapping project.

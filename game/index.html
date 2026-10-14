@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08090e">
+  <meta name="description" content="Play the Kujo Beatdown community project's original, browser-based rhythm prototype.">
+  <title>Kujo Beatdown — Rhythm Prototype</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="wordmark" href="../index.html" aria-label="Kujo Beatdown project home"><span class="mark">K</span><span>KUJO <b>BEATDOWN</b></span></a>
+      <div class="top-actions"><span class="prototype-tag"><i></i> ORIGINAL PLAYABLE PROTOTYPE</span><a class="back-link" href="../index.html">Project hub <span aria-hidden="true">↗</span></a></div>
+    </header>
+
+    <section class="intro" aria-labelledby="game-title">
+      <div><p class="eyebrow">A community-built rhythm game demo</p><h1 id="game-title">Find the <span>beat.</span></h1><p class="lede">Cut the incoming blocks on the pulse. This self-contained prototype uses an original synthesized backing track—not the official recording.</p></div>
+      <div class="song-chip"><span class="pulse-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span><b>BEATDOWN / DEMO MIX</b><small>90 BPM · 1:00 run</small></span></div>
+    </section>
+
+    <section class="game-card" aria-label="Rhythm game">
+      <div class="hud">
+        <div class="hud-stat"><span>SCORE</span><strong id="score">000000</strong></div>
+        <div class="hud-stat combo-stat"><span>COMBO</span><strong><b id="combo">0</b><small>×</small></strong></div>
+        <div class="hud-stat accuracy-stat"><span>ACCURACY</span><strong id="accuracy">—</strong></div>
+        <div class="hud-stat progress-stat"><span>RUN</span><div class="progress-track"><i id="progress"></i></div><small id="time-left">1:00</small></div>
+        <div class="hud-buttons"><button id="mute" class="icon-button" type="button" aria-label="Mute audio" title="Mute audio">♫</button><button id="pause" class="icon-button" type="button" aria-label="Pause game" title="Pause">Ⅱ</button></div>
+      </div>
+      <div class="stage-wrap">
+        <canvas id="stage" aria-label="Rhythm game playfield. Press A for blue notes and L for red notes, matching the arrow direction." role="img"></canvas>
+        <div id="overlay" class="overlay">
+          <div class="overlay-panel" id="overlay-panel">
+            <div class="overlay-kicker"><span class="mini-dot blue"></span> BLUE <span class="slash">/</span> <span class="mini-dot red"></span> RED</div>
+            <h2 id="overlay-title">Ready to<br><em>beatdown?</em></h2>
+            <p id="overlay-copy">Hit each block as it reaches the bright line. Follow its arrow for a clean cut.</p>
+            <button id="start" class="start-button" type="button">Start the run <span aria-hidden="true">→</span></button>
+            <p class="keys-hint"><kbd>A</kbd> blue <span>·</span> <kbd>L</kbd> red <span>·</span> or tap the matching side</p>
+          </div>
+        </div>
+        <div class="lane-label left-label"><span class="swatch blue"></span> BLUE <kbd>A</kbd></div>
+        <div class="lane-label right-label"><span class="swatch red"></span> RED <kbd>L</kbd></div>
+        <div class="hit-flash" id="hit-flash" aria-hidden="true"></div>
+      </div>
+      <div class="game-footer"><span><i class="live-dot"></i> <span id="status">READY WHEN YOU ARE</span></span><span>Demo chart patterns are procedural and are not a released Beat Saber map.</span></div>
+    </section>
+
+    <section class="below-grid" aria-label="How to play and project note">
+      <article class="info-card"><span class="card-index">01 / CONTROLS</span><h3>Read the cut.</h3><p>Press <kbd>A</kbd> for blue or <kbd>L</kbd> for red when a block meets the strike line. Use the arrow as a directional cue; the demo accepts a hit on the matching side.</p></article>
+      <article class="info-card"><span class="card-index">02 / SCORING</span><h3>Keep your flow.</h3><p>Well-timed cuts build combo and score. Early, late, and missed blocks break your streak. You can pause, mute, or start a fresh run any time.</p></article>
+      <article class="info-card note-card"><span class="card-index">PROJECT NOTE</span><h3>Prototype, not a release.</h3><p>This original mini-game demonstrates a possible interactive companion. It contains no Ren recording, lyrics, or official Beat Saber chart; music rights and any future distribution remain separate.</p></article>
+    </section>
+    <footer>Made for the <a href="https://github.com/ibloud/kujo-beatdown-beatsaber-map">Kujo Beatdown community mapping project</a><span>·</span> Original demo audio · No external assets</footer>
+  </main>
+  <div class="sr-only" id="announcer" aria-live="polite"></div>
+</body>
+</html>
